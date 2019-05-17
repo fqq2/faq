@@ -113,7 +113,7 @@ class ProfileController extends Controller
         $profile->body = $request->body;
         $profile->save();
 
-        return redirect()->route('home')->with('message', 'Updated Profile');
+        return redirect()->route('home')->with('message', 'Updated Profile!');
     }
 
     /**
