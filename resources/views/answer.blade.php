@@ -17,6 +17,9 @@
                         <a class="btn btn-primary float-right mr-2" href="{{ route('answer.edit',['question_id'=> $question, 'answer_id'=> $answer->id, ])}}">
                             Edit Answer
                         </a>
+                        <a class="btn btn-success float-right mr-2" href="{{ route('reply.create', ['answer_id'=> $answer->id])}}">
+                            Reply
+                        </a>
                     </div>
                 </div>
 
