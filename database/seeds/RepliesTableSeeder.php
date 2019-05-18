@@ -11,7 +11,7 @@ class RepliesTableSeeder extends Seeder
      */
     public function run()
     {
-        $users = App\User::inRandomOrder();
+        $users = App\User::all();
         for ($i = 1; $i <= 6; $i++) {
             $users->each(function ($user) {
                 $answer = App\Answer::inRandomOrder()->first();

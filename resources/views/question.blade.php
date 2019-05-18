@@ -35,6 +35,7 @@
                     <div class="card-body">
                         @forelse($question->answers as $answer)
                             <div class="card">
+
                                 <div class="card-body">{{$answer->body}}</div>
                                 <div class="card-footer">
 

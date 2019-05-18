@@ -33,7 +33,7 @@ Route::post('/question/{question_id}/answer/', 'AnswerController@store')->name('
 Route::patch('/question/{question_id}/answer/{answer_id}', 'AnswerController@update')->name('answer.update');
 Route::delete('/question/{question_id}/answer/{answer_id}', 'AnswerController@destroy')->name('answer.destroy');
 
-Route::get('/question/{question_id}/replies/create', 'ReplyController@create')->name('reply.create');
+Route::get('/answer/{answer_id}/replies/create', 'ReplyController@create')->name('reply.create');
 Route::get('/answer/{answer_id}/', 'ReplyController@show')->name('reply.show');
 Route::get('/question/{question_id}/answer/{answer_id}/replies/{replies_id}/edit', 'ReplyController@edit')->name('reply.edit');
 Route::post('/answer/{answer_id}/replies/', 'ReplyController@store')->name('reply.store');
