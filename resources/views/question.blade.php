@@ -34,7 +34,15 @@
 
                     <div class="card-body">
                         @forelse($question->answers as $answer)
+
                             <div class="card">
+                                <div class="card-header">
+                                    <small class="text-muted">
+                                        Updated: {{ $answer->created_at->diffForHumans() }}
+                                        Answers: {{ $answer->reply()->count() }}
+
+                                    </small>
+                                </div>
 
                                 <div class="card-body">{{$answer->body}}</div>
                                 <div class="card-footer">
